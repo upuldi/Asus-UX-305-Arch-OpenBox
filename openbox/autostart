@@ -1,0 +1,17 @@
+thunar --daemon &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+/usr/lib/notification-daemon-1.0/notification-daemon &
+python2-notify &
+(sleep 1s && nitrogen --restore) &
+(sleep 1s && tint2) &
+(sleep 1s && xscreensaver -no-splash) &
+(sleep 1s && batterymon &) & 
+(sleep 3s && xinput set-prop 'SynPS/2 Synaptics TouchPad' 'Device Enabled' 0) &
+(sleep 3s && volwheel) &
+(sleep 3s && parcellite) &
+(sleep 5s && orage  ) &
+(sleep 5.4s && orage -t ) &
+#(sleep 16s && nm-applet  ) &
+
+
+conky -c "/home/udoluweera/conky-manager/themes/future_conky/config/conkyrc1"

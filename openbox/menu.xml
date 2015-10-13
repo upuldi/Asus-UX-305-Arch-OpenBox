@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/">
+
+	#Applications
+	<menu id="root-menu" label="Applications">
+		<item icon="/usr/share/icons/hicolor/scalable/apps/Thunar.svg" label="Explore">
+			<action name="Execute">
+				<execute>thunar</execute>
+			</action>
+		</item>
+		<item icon="/usr/share/icons/gnome/32x32/apps/gnome-terminal.png" label="Terminal">
+			<action name="Execute">
+				<execute>sakura</execute>
+			</action>
+		</item>
+		<item icon="/usr/share/icons/HighContrast/22x22/apps/libreoffice-base.png" label="Office">
+			<action name="Execute">
+				<execute>libreoffice</execute>
+			</action>
+		</item>
+		<item icon="/usr/share/icons/hicolor/128x128/apps/nitrogen.png" label="Nitrogen">
+			<action name="Execute">
+				<execute>nitrogen</execute>
+			</action>
+		</item>
+		<item icon="/usr/share/icons/Faenza/apps/48/gnome-screenshot.png" label="Screenshot">
+			<action name="Execute">
+				<execute>gnome-screenshot --interactive</execute>
+			</action>
+		</item>
+	
+		#Accessories
+		<separator/>
+		<menu icon="/usr/share/icons/Faenza/categories/48/applications-utilities.png" id="Accessories" label="Accessories">
+			<item icon="/usr/share/icons/Faenza/apps/48/virtualbox.png" label="Virtual Box">
+				<action name="Execute">
+					<execute>virtualbox</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/filezilla.png" label="FileZilla">
+				<action name="Execute">
+					<execute>filezilla</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/xournal.png" label="Xournal">
+				<action name="Execute">
+					<execute>xournal</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/galculator.png" label="Calculator">
+				<action name="Execute">
+					<execute>gnome-calculator</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/pixmaps/parcellite.xpm" label="Parcellite">
+				<action name="Execute">
+					<execute>parcellite</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/synapse.png" label="Synapse">
+				<action name="Execute">
+					<execute>synapse</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/gparted.png" label="Gparted">
+				<action name="Execute">
+					<execute>gparted</execute>
+				</action>
+			</item>			
+		</menu>
+		
+		#Browsers
+		<menu icon="/usr/share/icons/Faenza/apps/48/browser.png" id="root-menu-155125" label="Browsers">
+			<item icon="/usr/share/icons/Faenza/apps/48/google-chrome.png" label="Chrome">
+				<action name="Execute">
+					<execute>google-chrome-stable</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/chromium.png" label="Chromium">
+				<action name="Execute">
+					<execute>chromium</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/firefox.png" label="Firefox">
+				<action name="Execute">
+					<execute>firefox</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/setroubleshoot_red_icon.png" label="Tor">
+				<action name="Execute">
+					<execute>tor-browser-en</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/gparted.png" label="GParted">
+				<action name="Execute">
+					<execute>/usr/bin/gparted_polkit</execute>
+				</action>
+			</item>
+		</menu>
+		
+		#Development
+		<menu icon="/usr/share/icons/Faenza/categories/48/applications-development.png" id="Development" label="Development">
+			<item icon="/home/udoluweera/Applications/idea-IU-141.2735.5/bin/idea.png" label="IDEA">
+				<action name="Execute">
+					<execute>sh ~/Applications/idea-IU-141.2735.5/bin/idea.sh</execute>
+				</action>
+			</item>
+			<item icon="/home/udoluweera/Applications/Webstrom/WebStorm-133.434/bin/webide.png" label="WebStorm">
+				<action name="Execute">
+					<execute>sh /home/udoluweera/Applications/Webstrom/WebStorm-133.434/bin/webstorm.sh</execute>
+				</action>
+			</item>
+			<item icon="/home/udoluweera/Applications/sts-bundle/sts-3.7.1.RELEASE/icon.xpm" label="Spring Tool Suite">
+				<action name="Execute">
+					<execute>/home/udoluweera/Applications/sts-bundle/sts-3.7.1.RELEASE/STS</execute>
+				</action>
+			</item>
+			
+			<item icon="/home/udoluweera/Applications/eclipse/icon.xpm" label="EClipse">
+				<action name="Execute">
+					<execute>/home/udoluweera/Applications/eclipse/eclipse</execute>
+				</action>
+			</item>
+			<item icon="/home/udoluweera/Applications/sqldeveloper/icon.png" label="Oracle Sql Developer">
+				<action name="Execute">
+					<execute>sh ~/Applications/sqldeveloper/sqldeveloper.sh</execute>
+				</action>
+			</item>
+			<item icon="/home/udoluweera/AppConfs/Icons/meld.png" label="Meld">
+				<action name="Execute">
+					<execute>meld</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/drakmenustyle.png" label="SublimeText">
+				<action name="Execute">
+					<execute>subl3</execute>
+				</action>
+			</item>
+			<item icon="/home/udoluweera/AppConfs/Icons/geany.jpg" label="Geany">
+				<action name="Execute">
+					<execute>geany</execute>
+				</action>
+			</item>
+			<item icon="/home/udoluweera/AppConfs/Icons/mysql-workbench.jpg" label="MysqlWorkBench">
+				<action name="Execute">
+					<execute>mysql-workbench</execute>
+				</action>
+			</item>		
+			<item icon="/home/udoluweera/AppConfs/Icons/heidisql.jpg" label="Heidisql">
+				<action name="Execute">
+					<execute>heidisql</execute>
+				</action>
+			</item>		
+			<item icon="/home/udoluweera/AppConfs/Icons/Fiddler.jpg" label="Fiddler">
+				<action name="Execute">
+					<execute>mono /home/udoluweera/Applications/Fiddler/Fiddler.exe</execute>
+				</action>
+			</item>			
+			<item icon="/home/udoluweera/AppConfs/Icons/olv.jpg" label="OLV">
+				<action name="Execute">
+					<execute>/home/udoluweera/Applications/olv-2013-05-15/olv.sh</execute>
+				</action>
+			</item>			
+	
+		</menu>
+		
+		#Graphics
+		<menu icon="/usr/share/icons/Faenza/categories/48/applications-graphics.png" id="Graphics" label="Graphics">
+			<item icon="/usr/share/icons/Faenza/apps/48/xine.png" label="Guvcview">
+				<action name="Execute">
+					<execute>guvcview</execute>
+				</action>
+			</item>
+			<item icon="/home/udoluweera/AppConfs/Icons/gimp.jpg" label="Gimp">
+				<action name="Execute">
+					<execute>gimp</execute>
+				</action>
+			</item>
+			<item icon="/home/udoluweera/AppConfs/Icons/darktable.jpg" label="DarkTable">
+				<action name="Execute">
+					<execute>darktable</execute>
+				</action>
+			</item>
+		</menu>
+
+
+		#Multimedia	
+		<menu icon="/usr/share/icons/Faenza/categories/48/applications-multimedia.png" id="Multimedia" label="Multimedia">
+			<item icon="/usr/share/icons/Faenza/apps/48/deluge.png" label="Deluge">
+				<action name="Execute">
+					<execute>deluge</execute>
+				</action>
+			</item>
+			<item icon="/home/udoluweera/AppConfs/Icons/popconetime.jpg" label="Popconetime">
+				<action name="Execute">
+					<execute>popcorntime</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/vlc.png" label="VLC media player">
+				<action name="Execute">
+					<execute>/usr/bin/vlc</execute>
+				</action>
+			</item>
+		</menu>
+		
+		#Network
+		<menu icon="/usr/share/icons/Faenza/categories/48/applications-internet.png" id="Network" label="Network">
+			<item icon="/usr/share/icons/Faenza/devices/48/network-wired.png" label="Avahi SSH Server Browser">
+				<action name="Execute">
+					<execute>/usr/bin/bssh</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/devices/48/network-wired.png" label="Avahi VNC Server Browser">
+				<action name="Execute">
+					<execute>/usr/bin/bvnc</execute>
+				</action>
+			</item>
+		</menu>
+		
+		#Wine
+		<menu icon="/usr/share/icons/Faenza/apps/48/wine.png" id="Wine" label="Wine">
+		</menu>
+
+		#Office
+		<menu icon="/usr/share/icons/Faenza/categories/48/applications-office.png" id="Office" label="Office">
+			<item icon="/usr/share/icons/Faenza/apps/48/evince.png" label="Document Viewer">
+				<action name="Execute">
+					<execute>evince</execute>
+				</action>
+			</item>
+		</menu>
+
+		#Settings
+		<menu icon="/usr/share/icons/Faenza/categories/48/applications-accessories.png" id="Settings" label="Settings">
+
+			<item icon="/usr/share/icons/Faenza/apps/48/preferences-desktop-theme.png" label="LXAppearance">
+				<action name="Execute">
+					<execute>lxappearance</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/pixmaps/obconf.png" label="ObConf">
+				<action name="Execute">
+					<execute>obconf</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/pixmaps/tint2conf.png" label="Tint2Conf">
+				<action name="Execute">
+					<execute>tint2conf</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/blender.png" label="ConkyManager">
+				<action name="Execute">
+					<execute>conky-manager</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/devices/48/display.png" label="Monitors">
+				<action name="Execute">
+					<execute>lxrandr</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/pixmaps/gnome-alsamixer/gnome-alsamixer-icon.png" label="GNOME ALSA Mixer">
+				<action name="Execute">
+					<execute>gnome-alsamixer</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/flash-player-properties.png" label="Adobe Flash Player">
+				<action name="Execute">
+					<execute>flash-player-properties</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/seahorse.png" label="Seahorse">
+				<action name="Execute">
+					<execute>seahorse</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/preferences-system-network.png" label="Network Connections">
+				<action name="Execute">
+					<execute>nm-connection-editor</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/status/48/xfce4-notifyd.png" label="Notifications">
+				<action name="Execute">
+					<execute>xfce4-notifyd-config</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/preferences-desktop-default-applications.png" label="Preferred Applications">
+				<action name="Execute">
+					<execute>exo-preferred-applications</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/pixmaps/gksu.png" label="GKSU Run">
+				<action name="Execute">
+					<execute>gksu</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/pixmaps/gksu.png" label="Privilege granting">
+				<action name="Execute">
+					<execute>gksu-properties</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/devices/48/drive-removable-media.png" label="Removable Drives and Media">
+				<action name="Execute">
+					<execute>thunar-volman-settings</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/xscreensaver.png" label="Screensaver">
+				<action name="Execute">
+					<execute>xscreensaver-demo</execute>
+				</action>
+			</item>
+		</menu>
+
+
+		#OpenBox
+		<menu icon="/usr/share/icons/Faenza/categories/48/gnome-settings.png" id="OpenBox" label="OpenBox">
+				<item icon="/usr/share/pixmaps/openbox.png" label="Reconfigure Openbox">
+					<action name="Execute">
+						<execute>openbox --reconfigure</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/Faenza/apps/48/geany.png" label="Openbox Autostart">
+					<action name="Execute">
+						<execute>geany -m ~/.config/openbox/autostart</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/Faenza/apps/48/geany.png" label="Openbox RC">
+					<action name="Execute">
+						<execute>geany -m ~/.config/openbox/rc.xml</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/Faenza/apps/48/geany.png" label="Openbox Menu">
+					<action name="Execute">
+						<execute>geany -m ~/.config/openbox/menu.xml</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/Faenza/apps/48/geany.png" label="Openbox Logout">
+					<action name="Execute">
+						<execute>gksu geany /etc/oblogout.conf</execute>
+					</action>
+				</item>
+		</menu>
+
+		#Pacman
+		<menu icon="/usr/share/icons/Faenza/apps/48/package-manager-icon.png" id="Pacman" label="Pacman">
+			<item icon="/usr/share/icons/Faenza/apps/48/xterm-color_48x48.xpm" label="Pacman Log">
+				<action name="Execute">
+					<execute>geany -m /var/log/pacman.log</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/geany.png" label="Pacman Config">
+				<action name="Execute">
+					<execute>gksu geany /etc/pacman.conf</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/geany.png" label="Pacman Mirrorlist">
+				<action name="Execute">
+					<execute>gksu geany /etc/pacman.d/mirrorlist</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/geany.png" label="Pacman Commands">
+				<action name="Execute">
+					<execute>geany -m ~/Commands/Pacman</execute>
+				</action>
+			</item>
+		</menu>
+		
+		#System
+		<menu icon="/usr/share/icons/Faenza/categories/48/applications-system.png" id="System" label="System">
+			
+			
+			<item icon="/usr/share/icons/Faenza/apps/48/application-default-icon.png" label="systemadm">
+				<action name="Execute">
+					<execute>systemadm</execute>
+				</action>
+			</item>
+			
+			
+			<item icon="/usr/share/icons/Faenza/apps/48/xfce4-appfinder.png" label="xfce4-sensors">
+				<action name="Execute">
+					<execute>xfce4-sensors</execute>
+				</action>
+			</item>
+			
+			<item icon="/usr/share/icons/Faenza/apps/48/xfce4-appfinder.png" label="SystemMonitor">
+				<action name="Execute">
+					<execute>gnome-system-monitor</execute>
+				</action>
+			</item>
+
+			<item icon="/usr/share/icons/Faenza/apps/48/htop.png" label="Htop">
+				<action name="Execute">
+					<execute>sakura -e top</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/hardinfo/pixmaps/logo.png" label="HardInfo">
+				<action name="Execute">
+					<execute>hardinfo</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/xterm-color_48x48.xpm" label="XTerm">
+				<action name="Execute">
+					<execute>xterm</execute>
+				</action>
+			</item>
+			
+			<menu icon="/usr/share/icons/Faenza/apps/48/package-manager-icon.png" id="SysFiles" label="SysFiles">
+				<item icon="/usr/share/icons/Faenza/apps/48/geany.png" label="bashrc">
+					<action name="Execute">
+						<execute>leafpad ~/.bashrc</execute>
+					</action>
+				</item>			
+				<item icon="/usr/share/icons/Faenza/apps/48/geany.png" label="bash_profile">
+					<action name="Execute">
+						<execute>leafpad ~/.bashProfile</execute>
+					</action>
+				</item>			
+				<item icon="/usr/share/icons/Faenza/apps/48/geany.png" label="xinitrc">
+					<action name="Execute">
+						<execute>leafpad ~/.xinitrc</execute>
+					</action>
+				</item>	
+				<item icon="/usr/share/icons/Faenza/apps/48/geany.png" label="xprofile">
+					<action name="Execute">
+						<execute>leafpad ~/.xprofile</execute>
+					</action>
+				</item>	
+			</menu>
+			<item icon="/usr/share/icons/Faenza/apps/48/xterm-color_48x48.xpm" label="KillXorg">
+				<action name="Execute">
+					<execute>pkill -15 Xorg</execute>
+				</action>
+			</item>
+
+			<menu icon="/usr/share/icons/Faenza/apps/48/package-manager-icon.png" id="Systemctl" label="Systemctl">
+				<item icon="/usr/share/icons/Faenza/apps/48/htop.png" label="Services">
+					<action name="Execute">
+						<execute>sakura -e systemctl --type=service</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/Faenza/apps/48/htop.png" label="All Units">
+					<action name="Execute">
+						<execute>sakura -e systemctl list-units</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/Faenza/apps/48/htop.png" label="Failed Units">
+					<action name="Execute">
+						<execute>sakura -e systemctl --failed</execute>
+					</action>
+				</item>
+			</menu>
+			<menu icon="/usr/share/icons/Faenza/apps/48/package-manager-icon.png" id="JournalCtl" label="Journalctl">
+				
+				<item icon="/usr/share/icons/Faenza/apps/48/htop.png" label="High Prioriy Warnings">
+					<action name="Execute">
+						<execute>sakura -e journalctl -p 0..3 -xn</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/Faenza/apps/48/htop.png" label="Last Journal b 1">
+					<action name="Execute">
+						<execute>sakura -e journalctl -b -1</execute>
+					</action>
+				</item>
+				
+				<item icon="/usr/share/icons/Faenza/apps/48/htop.png" label="journalctl -b">
+					<action name="Execute">
+						<execute>sakura -e journalctl -b</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/Faenza/apps/48/htop.png" label="Journal Now on">
+					<action name="Execute">
+						<execute>sakura -e journalctl -f</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/Faenza/apps/48/htop.png" label="Since last 20 min">
+					<action name="Execute">
+						<execute>sakura -e journalctl --since "20 min ago"</execute>
+					</action>
+				</item>
+				<item icon="/usr/share/icons/Faenza/apps/48/htop.png" label="Clean Logs 2week">
+					<action name="Execute">
+						<execute>sakura -e journalctl --vacuum-size=100M</execute>
+					</action>
+				</item>
+			</menu>
+			
+		</menu>
+
+		<separator/>
+
+		<item icon="/usr/share/icons/Faenza/actions/48/lock.xpm" label="Lock Screen">
+			<action name="Execute">
+				<execute>xscreensaver-command -lock</execute>
+			</action>
+		</item>
+
+	<!--	<item icon="/usr/share/icons/Faenza/actions/48/exit.png" label="Power">
+			<action name="Execute">
+				<execute>oblogout</execute>
+			</action>
+		</item> -->
+
+		<menu id="exit-menu" label="Exit">
+			<item label="Log Out">
+				<action name="Execute">
+					<command>openbox --exit</command>
+				</action>
+			</item>
+			<item label="Shutdown">
+				<action name="Execute">
+					<command>systemctl poweroff</command>
+				</action>
+			</item>
+			<item label="Restart">
+				<action name="Execute">
+						<command>systemctl reboot</command>
+				</action>
+			</item>
+			<item label="Suspend">
+				<action name="Execute">
+						<command>systemctl suspend</command>
+				</action>
+			</item>
+			<item label="Hibernate">
+				<action name="Execute">
+						<command>systemctl hibernate</command>
+				</action>
+			</item>
+		</menu>
+
+	</menu>
+</openbox_menu>
