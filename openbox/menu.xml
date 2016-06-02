@@ -37,6 +37,11 @@
 					<execute>virtualbox</execute>
 				</action>
 			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/googlemusicframe.png" label="Genymotion">
+				<action name="Execute">
+					<execute>genymotion</execute>
+				</action>
+			</item>
 			<item icon="/usr/share/icons/Faenza/apps/48/filezilla.png" label="FileZilla">
 				<action name="Execute">
 					<execute>filezilla</execute>
@@ -86,6 +91,11 @@
 					<execute>firefox</execute>
 				</action>
 			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/opera.png" label="Opera">
+				<action name="Execute">
+					<execute>opera</execute>
+				</action>
+			</item>
 			<item icon="/usr/share/icons/Faenza/apps/48/setroubleshoot_red_icon.png" label="Tor">
 				<action name="Execute">
 					<execute>tor-browser-en</execute>
@@ -131,11 +141,18 @@
 					<execute>meld</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/Faenza/apps/48/drakmenustyle.png" label="SublimeText">
+			<item icon="/usr/share/icons/Faenza/apps/48/dc++.png" label="SublimeText">
 				<action name="Execute">
 					<execute>subl3</execute>
 				</action>
 			</item>
+			
+			<item icon="/usr/share/icons/Faenza/apps/48/drakmenustyle.png" label="brackets">
+				<action name="Execute">
+					<execute>brackets</execute>
+				</action>
+			</item>
+			
 			<item icon="/home/udoluweera/AppConfs/Icons/geany.jpg" label="Geany">
 				<action name="Execute">
 					<execute>geany</execute>
@@ -482,7 +499,21 @@
 					</action>
 				</item>
 			</menu>
-			
+			<item icon="/usr/share/icons/Faenza/apps/48/htop.png" label="Environment Variables">
+				<action name="Execute">
+					<execute>sakura -t printenv </execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/htop.png" label="Lxterminal">
+				<action name="Execute">
+					<execute>lxterminal </execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/geany.png" label="System Commands">
+				<action name="Execute">
+					<execute>geany -m ~/Commands/System</execute>
+				</action>
+			</item>
 		</menu>
 
 		<separator/>

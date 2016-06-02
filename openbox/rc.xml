@@ -476,12 +476,12 @@
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="XF86MonBrightnessUp">
+    <keybind key="W-v">
       <action name="Execute">
         <command>xbacklight +10</command>
       </action>
     </keybind>
-    <keybind key="XF86MonBrightnessDown">
+    <keybind key="W-b">
       <action name="Execute">
         <command>xbacklight -10</command>
       </action>

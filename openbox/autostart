@@ -11,7 +11,7 @@ python2-notify &
 (sleep 3s && parcellite) &
 (sleep 5s && orage  ) &
 (sleep 5.4s && orage -t ) &
-(sleep 6s && workrave -t ) &
+(sleep 6s && workrave) &
 #(sleep 16s && nm-applet  ) &
 
 
