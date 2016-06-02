@@ -1,0 +1,4 @@
+Pacman Commands 
+++++++++++++++++
+
+pacman -Qlq <Package> | grep bin ==> To See executable files

@@ -1,0 +1,1 @@
+sudo lsof -i :<PORT>  = How to view a process running on a specific port (eg sudo lsof -i :35729)
