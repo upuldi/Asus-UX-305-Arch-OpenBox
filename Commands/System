@@ -1,1 +1,2 @@
 sudo lsof -i :<PORT>  = How to view a process running on a specific port (eg sudo lsof -i :35729)
+sudo grep -H '^psk=' /etc/NetworkManager/system-connections/* == How to view all the wifi passwords saved 

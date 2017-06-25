@@ -1,4 +1,10 @@
 Pacman Commands 
 ++++++++++++++++
 
+pacman -Qqm - List of foriegn Packages - AUR
 pacman -Qlq <Package> | grep bin ==> To See executable files
+pacman -Qe ==> List explicitly installed packages
+pacman -Rns $(pacman -Qtdq) ==> recursively removing orphans and their configuration files:
+pacman -Qi package_name ==> list locally installed packages
+pactree package_name ==> To list a dependency tree of a package:
+

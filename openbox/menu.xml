@@ -13,6 +13,11 @@
 				<execute>sakura</execute>
 			</action>
 		</item>
+		<item icon="/usr/share/icons/gnome/32x32/apps/gnome-terminal.png" label="St Term">
+			<action name="Execute">
+				<execute>st</execute>
+			</action>
+		</item>
 		<item icon="/usr/share/icons/HighContrast/22x22/apps/libreoffice-base.png" label="Office">
 			<action name="Execute">
 				<execute>libreoffice</execute>
@@ -35,6 +40,11 @@
 			<item icon="/usr/share/icons/Faenza/apps/48/virtualbox.png" label="Virtual Box">
 				<action name="Execute">
 					<execute>virtualbox</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/remmina.png" label="remmina - RDP">
+				<action name="Execute">
+					<execute>remmina</execute>
 				</action>
 			</item>
 			<item icon="/usr/share/icons/Faenza/apps/48/googlemusicframe.png" label="Genymotion">
@@ -69,7 +79,7 @@
 			</item>
 			<item icon="/usr/share/icons/Faenza/apps/48/gparted.png" label="Gparted">
 				<action name="Execute">
-					<execute>gparted</execute>
+					<execute>sudo gparted</execute>
 				</action>
 			</item>			
 		</menu>
@@ -115,9 +125,34 @@
 					<execute>sh ~/Applications/idea-IU-141.2735.5/bin/idea.sh</execute>
 				</action>
 			</item>
-			<item icon="/home/udoluweera/Applications/Webstrom/WebStorm-133.434/bin/webide.png" label="WebStorm">
+			<item icon="/home/udoluweera/Applications/idea-IU-162.2228.15/bin/idea.png" label="IDEA 16.2.5">
 				<action name="Execute">
-					<execute>sh /home/udoluweera/Applications/Webstrom/WebStorm-133.434/bin/webstorm.sh</execute>
+					<execute>sh ~/Applications/idea-IU-162.2228.15/bin/idea.sh</execute>
+				</action>
+			</item>
+			<item icon="/home/udoluweera/Applications/WebStorm-162.2228.20/bin/webstorm.svg" label="WebStorm">
+				<action name="Execute">
+					<execute>sh /home/udoluweera/Applications/WebStorm-162.2228.20/bin/webstorm.sh</execute>
+				</action>
+			</item>
+			<item icon="/home/udoluweera/Applications/DataGrip-2016.2.6/bin/product.png" label="DataGrip">
+				<action name="Execute">
+					<execute>sh ~/Applications/DataGrip-2016.2.6/bin/datagrip.sh</execute>
+				</action>
+			</item>
+			<item icon="/home/udoluweera/Applications/clion-2016.2.3/bin/clion.svg" label="Clion">
+				<action name="Execute">
+					<execute>sh ~/Applications/clion-2016.2.3/bin/clion.sh</execute>
+				</action>
+			</item>
+			<item icon="/home/udoluweera/Applications/RubyMine-2016.2.5/bin/RMlogo.svg" label="RubyMine">
+				<action name="Execute">
+					<execute>sh ~/Applications/RubyMine-2016.2.5/bin/rubymine.sh</execute>
+				</action>
+			</item>
+			<item icon="/home/udoluweera/Applications/pycharm-2016.2.3/bin/pycharm.png" label="Pycharm">
+				<action name="Execute">
+					<execute>sh ~/Applications/pycharm-2016.2.3/bin/pycharm.sh</execute>
 				</action>
 			</item>
 			<item icon="/home/udoluweera/Applications/sts-bundle/sts-3.7.1.RELEASE/icon.xpm" label="Spring Tool Suite">
@@ -141,7 +176,7 @@
 					<execute>meld</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/Faenza/apps/48/dc++.png" label="SublimeText">
+			<item icon="/home/udoluweera/AppConfs/Icons/sublime.png" label="SublimeText">
 				<action name="Execute">
 					<execute>subl3</execute>
 				</action>
@@ -330,7 +365,7 @@
 
 		#OpenBox
 		<menu icon="/usr/share/icons/Faenza/categories/48/gnome-settings.png" id="OpenBox" label="OpenBox">
-				<item icon="/usr/share/pixmaps/openbox.png" label="Reconfigure Openbox">
+				<item icon="/usr/share/icons/Faenza/apps/32/gnome-session-reboot.png" label="Reconfigure Openbox">
 					<action name="Execute">
 						<execute>openbox --reconfigure</execute>
 					</action>
@@ -358,13 +393,33 @@
 		</menu>
 
 		#Pacman
-		<menu icon="/usr/share/icons/Faenza/apps/48/package-manager-icon.png" id="Pacman" label="Pacman">
-			<item icon="/usr/share/icons/Faenza/apps/48/xterm-color_48x48.xpm" label="Pacman Log">
+		<menu icon="/usr/share/icons/Faenza/actions/16/package-upgrade.png" id="Pacman" label="Pacman">
+			<item icon="/usr/share/icons/Faenza/status/scalable/aptdaemon-upgrade.svg" label="UpgradePacMan">
+				<action name="Execute">
+					<execute>sakura -h -m -e sudo pacman -Syuu --noconfirm</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/update-manager.png" label="UpgradeAur">
+				<action name="Execute">
+					<execute>sakura -h -m -e yaourt -Syua --noconfirm</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/actions/16/package-remove.png" label="ClearPacCache">
+				<action name="Execute">
+					<execute>sakura -h -m -e sudo pacman -Sc</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/actions/96/stock_delete.png" label="CearOrphans">
+				<action name="Execute">
+					<execute>sakura -e sudo pacman -Rns $(pacman -Qtdq)</execute>
+				</action>
+			</item>
+			<item icon="/usr/share/icons/Faenza/apps/48/logviewer.png" label="Pacman Log">
 				<action name="Execute">
 					<execute>geany -m /var/log/pacman.log</execute>
 				</action>
 			</item>
-			<item icon="/usr/share/icons/Faenza/apps/48/geany.png" label="Pacman Config">
+			<item icon="/usr/share/icons/Faenza/apps/48/system-config-authentication.png" label="Pacman Config">
 				<action name="Execute">
 					<execute>gksu geany /etc/pacman.conf</execute>
 				</action>
@@ -384,13 +439,17 @@
 		#System
 		<menu icon="/usr/share/icons/Faenza/categories/48/applications-system.png" id="System" label="System">
 			
+			<item icon="/usr/share/icons/Faenza/apps/48/gufw.png" label="Firewall">
+				<action name="Execute">
+					<execute>gufw</execute>
+				</action>
+			</item>
 			
 			<item icon="/usr/share/icons/Faenza/apps/48/application-default-icon.png" label="systemadm">
 				<action name="Execute">
 					<execute>systemadm</execute>
 				</action>
 			</item>
-			
 			
 			<item icon="/usr/share/icons/Faenza/apps/48/xfce4-appfinder.png" label="xfce4-sensors">
 				<action name="Execute">
@@ -461,7 +520,7 @@
 				</item>
 				<item icon="/usr/share/icons/Faenza/apps/48/htop.png" label="Failed Units">
 					<action name="Execute">
-						<execute>sakura -e systemctl --failed</execute>
+						<execute>sakura -h -e systemctl --failed </execute>
 					</action>
 				</item>
 			</menu>
@@ -488,14 +547,14 @@
 						<execute>sakura -e journalctl -f</execute>
 					</action>
 				</item>
-				<item icon="/usr/share/icons/Faenza/apps/48/htop.png" label="Since last 20 min">
+				<item icon="/usr/share/icons/Faenza/apps/48/htop.png" label="Since Today">
 					<action name="Execute">
-						<execute>sakura -e journalctl --since "20 min ago"</execute>
+						<execute>sakura -h -m -e journalctl --since today</execute>
 					</action>
 				</item>
 				<item icon="/usr/share/icons/Faenza/apps/48/htop.png" label="Clean Logs 2week">
 					<action name="Execute">
-						<execute>sakura -e journalctl --vacuum-size=100M</execute>
+						<execute>sakura -h -e sudo journalctl --vacuum-size=100M</execute>
 					</action>
 				</item>
 			</menu>
