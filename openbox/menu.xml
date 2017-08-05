@@ -444,7 +444,11 @@
 					<execute>gufw</execute>
 				</action>
 			</item>
-			
+			<item icon="/usr/share/icons/Faenza/apps/48/control-center2.png" label="Update Clam">
+				<action name="Execute">
+					<execute>sakura -h -m -e sudo freshclam</execute>
+				</action>
+			</item>
 			<item icon="/usr/share/icons/Faenza/apps/48/application-default-icon.png" label="systemadm">
 				<action name="Execute">
 					<execute>systemadm</execute>
