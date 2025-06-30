@@ -8,9 +8,12 @@ This project is a curated collection of configuration files, scripts, and themin
 
 ## 📸 Preview
 
-![Desktop Screenshot](screenshots/desktop.png)
-![Rofi Launcher](screenshots/rofi.png)
-![Tint2 Panel](screenshots/tint2.png)
+![Desktop Screenshot](screenshots/1.png)
+![Desktop Screenshot](screenshots/2.png)
+![Desktop Screenshot](screenshots/3.png)
+![Desktop Screenshot](screenshots/4.png)
+![Desktop Screenshot](screenshots/5.png)
+
 
 > More screenshots in the `screenshots/` folder.
 
@@ -117,7 +120,7 @@ Autostart programs are listed in ~/.config/openbox/autostart
 
 Scripts in the scripts/ folder include helpers for toggling WiFi, SSH mounts, screenshot tools, etc.
 
-##💡 Tips & Extras
+## 💡 Tips & Extras
 Use lxappearance to easily manage GTK themes and icons
 
 Try integrating xrandr commands in autostart for multi-monitor setups
